@@ -1,0 +1,23 @@
+{
+  "name": "hanoi-ra-backend",
+  "version": "1.0.0",
+  "description": "三柱汉诺塔最优解序列随机访问与状态核验后端（API + CLI）",
+  "type": "commonjs",
+  "main": "dist/server.js",
+  "bin": {
+    "hanoi": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests",
+    "start": "node dist/server.js",
+    "demo": "node dist/cli.js demo"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
