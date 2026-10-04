@@ -1,0 +1,17 @@
+{
+  "name": "hanoi-random-access",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/hanoi.test.js",
+    "start": "node dist/src/cli.js serve",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.9.3"
+  }
+}
